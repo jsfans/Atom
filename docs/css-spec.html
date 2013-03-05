@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 书写规范</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="container">
+            <div class="aside">
+                <div class="logo">
+                    <h1 class="brand">Atom</h1>
+                    <p class="quote">写更好的前端代码</p>
+                </div>
+                <ul class="nav nav-list">
+                    <li class="nav-hd active"><a href="../index.html">首页</a></li>
+                    <li class="nav-hd">
+                        <a href="#">文档</a>
+                        <ul class="nav-child">
+                            <li><a href="#"><span>CSS</span>书写规范</a></li>
+                            <li><a href="#"><span>CSS</span>构建规范</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="content">
+                <h2 class="title">CSS 书写规范</h2>
+                <dl>
+                    <dt>概述</dt>
+                    <dd>
+                        <p>规范的目的在于使我们的CSS代码更加易于维护和重用，从而提升效率。</p>
+                    </dd>
+                    <dt>选择器命名</dt>
+                    <dd>
+                        <ul>
+                            <li>命名除 <code>.fn-</code> / <code>.ui-</code> / <code>.sl-</code> 外，可自定义命名。请慎用 selected current disabled first last success error</li>
+                            <li>一般情况下，如果命名比较通用，比如 current，请限定在相应的上下文环境中。比如其父节点ID为#parent 等比较通用的命名，建议写成 #parent .current{}，而非 .current{}，即使是为了重用，也应该注意。只有在非常明确不会影响到其他组件工作，并且其他人不会写这种命名的情况下，才让它变成全局通用的。</li>
+                            <li>作为 JS 结构的 class 和 ID ，必须以 <code>.js-</code> 开头。</li>
+                        </ul>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="footer"></div>
+    </div>
+</body>
+</html>
