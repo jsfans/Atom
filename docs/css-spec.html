@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>CSS 书写规范</title>
+    <title>CSS 规范</title>
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
@@ -50,12 +50,48 @@
 .selector3,
 ...
 .selectorN { property: value; }</code></pre>
-                        <p>避免使用低效的选择器</p>
+                        <p>避免使用低效的选择器。详见：<a href="https://developers.google.com/speed/docs/best-practices/rendering">https://developers.google.com/speed/docs/best-practices/rendering</a></p>
                         <pre><code class="language-css">body > * {...}
 div#ID {...}
 div#ID > h3 {...}
 #ID span.class a {...}
 div:last-child {...}</code></pre>
+                    </dd>
+                    <dt>属性书写</dt>
+                    <dd>
+                        <p>不强制属性书写顺序，但推荐按照 “显示属性 – 自身属性 – 文本属性 – 其他属性(hack)” 的书写，遵循因果关系。</p>
+                        <pre><code class="language-css">/* 显示属性 */            /* 自身属性 */            /* 文本属性 */
+display                  width                    color
+list-style               height                   font
+position                 margin                   text-decoration
+float                    padding                  text-align
+clear                    border                   vertical-align
+z-index                  background               white-space
+                                                  other text
+                                                  content</code></pre>
+                        <p>浏览器私有属性在前，标注属性在后</p>
+                        <pre><code class="language-css">-webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+     -o-border-radius: 5px;
+        border-radius: 5px;</code></pre>
+                    </dd>
+                    <dt>浏览器 Hack</dt>
+                    <dd>
+                        <p>使用以下形式区别浏览器。</p>
+                        <pre><code class="language-css">/* 区别属性 */
+IE6                       _property: value;
+IE6/7                     *property: value;
+
+/* 区别规则 */
+IE6                       * html selector { … }
+IE7                       *:first-child+html selector { … }
+not IE6                   html > body selector { … }
+firefox only              @-moz-document url-prefix() { … }
+saf3+/chrome1+            @media all and (-webkit-min-device-pixel-ratio:0) { … }
+opera only                @media all and (-webkit-min-device-pixel-ratio:10000),
+                          not all and (-webkit-min-device-pixel-ratio:0) { … }
+iPhone/mobile webkit      @media screen and (max-device-width: 480px) { … }</code></pre>
                     </dd>
                     <dt>注释</dt>
                     <dd>
@@ -75,6 +111,8 @@ div:last-child {...}</code></pre>
 .gallery li {...}
 .gallery li a {...}</code></pre>
                     </dd>
+                    <dt>文件结构</dt>
+                    <dd></dd>
                 </dl>
             </div>
         </div>
