@@ -19,10 +19,12 @@
                         <li class="nav-hd">
                             <a href="#">文档</a>
                             <ul class="nav-child">
-                                <li class="active"><a href="#"><span>CSS</span>规范</a></li>
-                                <li><a href="#"><span>CSS</span>构建规范</a></li>
+                                <li class="active"><a href="#">CSS 规范</a></li>
+                                <li><a href="#">CSS 构建规范</a></li>
+                                <li><a href="#">模块化</a></li>
                             </ul>
                         </li>
+                        <li class="nav-hd"><a href="#">组件</a></li>
                     </ul>
                 </div>
             </div>
@@ -76,6 +78,24 @@ z-index                  background               white-space
      -o-border-radius: 5px;
         border-radius: 5px;</code></pre>
                     </dd>
+                    <dt>文件书写</dt>
+                    <dd>
+                        <p>要有全局设置</p>
+                        <pre><code class="language-css">/* global set */
+body { font: 14px/1.5 Arial, \5FAE\8F6F\96C5\9ED1; ... }
+a { color: #458FCE; text-decoration: none; }
+a:hover { text-decoration: underline; }</code></pre>
+                        <p>减少直接在标签上定义样式，请使用类。 </p>
+                        <pre><code class="language-css">/* Bad */
+h1 { font-size: 22px; }
+h2 { font-size: 20px; }
+h3 { font-size: 18px; }
+
+/* Good */
+.txt-big { font-size: 22px; }
+.txt-normal { font-size: 20px; }
+.txt-small { font-size: 18px; }</code></pre>
+                    </dd>
                     <dt>浏览器 Hack</dt>
                     <dd>
                         <p>使用以下形式区别浏览器。</p>
@@ -85,13 +105,16 @@ IE6/7                     *property: value;
 
 /* 区别规则 */
 IE6                       * html selector { … }
-IE7                       *:first-child+html selector { … }
+IE7                       * :first-child+html selector { … }
 not IE6                   html > body selector { … }
 firefox only              @-moz-document url-prefix() { … }
 saf3+/chrome1+            @media all and (-webkit-min-device-pixel-ratio:0) { … }
 opera only                @media all and (-webkit-min-device-pixel-ratio:10000),
                           not all and (-webkit-min-device-pixel-ratio:0) { … }
 iPhone/mobile webkit      @media screen and (max-device-width: 480px) { … }</code></pre>
+                        <p>使用更优雅的 Hack</p>
+                        <pre><code class="language-css">.selector .child { property: value; } /* for ie6 */
+.selector > .child { property: value; } /* except ie6 */</code></pre>
                     </dd>
                     <dt>注释</dt>
                     <dd>
@@ -111,8 +134,6 @@ iPhone/mobile webkit      @media screen and (max-device-width: 480px) { … }</c
 .gallery li {...}
 .gallery li a {...}</code></pre>
                     </dd>
-                    <dt>文件结构</dt>
-                    <dd></dd>
                 </dl>
             </div>
         </div>
