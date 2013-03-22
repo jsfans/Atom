@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+// 全局基本变量
+// ==============================================
+
+// 灰度色
+// ---------------------
+
+$black:                 #000 !default;
+$grayDarker:            #0F0F0F !default;
+$grayDark:              #222 !default;
+$gray:                  #666 !default;
+$grayLight:             #999 !default;
+$grayLighter:           #ccc !default;
+$white:                 #fff !default;
+
+
+// 着重色
+// ---------------------
+
+$blue:                  #049cdb !default;
+$blueDark:              #0064cd !default;
+$green:                 #46a546 !default;
+$red:                   #9d261d !default;
+$yellow:                #ffc40d !default;
+$orange:                #f89406 !default;
+$pink:                  #c3325f !default;
+$purple:                #7a43b6 !default;
+
+
+// 页面配色
+// ---------------------
+
+$bodyBackground:        $white !default; // 页面背景色
+$textColor:             $grayDarker !default; // 默认前景色
+
+
+// 链接色
+// ---------------------
+
+$linkColor:             $grayDark !default; // 正常状态
+$linkColorHover:        #0C67AA !default; // 滑过状态
+$linkColorVisited:      #767e84 !default;
+
+
+// 排版
+// ---------------------
+
+// 字体
+$sansFontFamily:        Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif !default; // 无衬线字体
+$serifFontFamily:       Georgia, "Times New Roman", Times, serif !default; // 衬线字体
+
+$baseFontSize:          12px !default; // 默认字体大小
+$baseFontFamily:        $sansFontFamily !default; // 默认字体
+$baseLineHeight:        1.5 !default; // 默认行高
+$altFontFamily:         $serifFontFamily !default; // 备选字体
+
+$fontSizeLarger:        $baseFontSize + 4px; // 16px
+$fontSizeLarge:         $baseFontSize + 2px; // 14px
+
+
+// 表格
+// ---------------------
+
+$tableBackground:                   transparent !default; // 表格整体背景色
+$tableBackgroundAccent:             #f9f9f9 !default; // 条纹控
+$tableBackgroundHover:              #f5f5f5 !default; // 滑过
+$tableBorder:                       #ddd !default; // 边框
+
+
+// 按钮
+// ---------------------
+
+
+
+// 表单
+// ---------------------
+
+// 输入框
+
+
+
+// 组件变量
+// ==============================================
+
+// 组件层级
+// ---------------------
+
+$zindexDropdown:          1000 !default; // 下拉菜单
+$zindexTooltip:           1010 !default; // 提示信息
+$zindexModalBackdrop:     1020 !default; // 遮罩
+$zindexModal:             1030 !default; // 浮层
+
+
+
+// 导航栏
+// ---------------------
+$navbarBackgroundColor:     #1C79C1;
+$navbarActiveColor:         #0B60A1;
+
+
+// 分页
+// ---------------------
+
+$paginationBackground:                #fff !default;
+$paginationBorder:                    #ddd !default;
+$paginationActiveBackground:          #f5f5f5 !default;
+
+
+// 表单状态及提示
+// ---------------------
+
+// 浮层
+// ---------------------
+$modalWidth:                490;
+$modalHeight:               310;
+
+
+
+// 其他定义
+// ==============================================
+
+// 栅格系统
+// ---------------------
+
+$gridColumns:             20 !default; // 列数
+$gridColumnWidth:         30px !default; // 列宽
+$gridGutterWidth:         20px !default; // 列距
+$gridRowWidth:            ($gridColumns * $gridColumnWidth) + ($gridGutterWidth * ($gridColumns - 1)) !default; // 980px
+
+
+
+// 文档演示变量
+// ==============================================
+$monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace !default;

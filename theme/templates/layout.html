@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title%}{% endblock %} - Atom，写更好的前端代码</title>
+    <link rel="stylesheet" href="{{static_url('base.css')}}">
+    <link rel="stylesheet" href="{{static_url('doc.css')}}">
+</head>
+<body>
+    <div class="aside">
+        <div class="inner">
+            <div class="logo">
+                <div class="brand">Atom</div>
+                <p class="quote">写更好的前端代码</p>
+            </div>
+            {%- if config.navigation %}
+            <ul class="nav nav-list">
+                {%- for item in config.navigation %}
+                <li{%- if post.meta.pacakge && item.link == post.meta.pacakge %} class="active"{%- endif %}>
+                    <a href="{{content_url(item.link)}}">{{item.title}}</a>
+                    {%- if item.sub %}
+                    <ul class="nav-child">
+                        {%- for subitem in item.sub %}
+                        <li{%- if post.meta.file && subitem.link == post.meta.file %} class="active"{%- endif %}><a href="{{content_url(subitem.link)}}">{{subitem.title}}</a></li>
+                        {%- endfor %}
+                    </ul>
+                    {%- endif %}
+                </li>
+                {%- endfor %}
+            </ul>
+            {%- endif %}
+        </div>
+    </div>
+    <div class="content">
+        <div class="post">
+            <h1>{{post.title}}</h1>
+            <p>{{post.meta.summary}}</p>
+            {%- block document %}
+            {%- endblock %}
+        </div>
+    </div>
+    <div class="footer">
+        本文档于<time class="updated" datetime="{{post.pubdate|xmldatetime}}">{{post.pubdate|date('Y-m-d')}}</time>使用<a href="http://lab.lepture.com/nico/zh/">Nico</a>生成
+    </div>
+
+</body>
+</html>

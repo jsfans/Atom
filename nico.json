@@ -1,0 +1,39 @@
+{
+    "navigation": [
+        {
+            "link": "index",
+            "title": "首页"
+        },
+        {
+            "link": "docs",
+            "title": "文档",
+            "sub": [
+                {
+                    "link": "css-specification",
+                    "title": "CSS 规范"
+                },
+                {
+                    "link": "css-construction",
+                    "title": "CSS 构建规范"
+                },
+                {
+                    "link": "modularity",
+                    "title": "模块化"
+                }
+            ]
+        },
+        {
+            "link": "components",
+            "title": "组件"
+        }
+    ],
+    "source": "source",
+    "output": "docs",
+    "theme": "theme",
+    "permalink": "{{directory}}/{{filename}}.html",
+    "writers": [
+        "nico.PostWriter",
+        "nico.FileWriter",
+        "nico.StaticWriter"
+    ]
+}

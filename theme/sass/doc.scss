@@ -1,0 +1,150 @@
+@charset "utf-8";
+
+// 定义Atom文档演示样式
+// 维护人：金烨、张盛志
+// --------------------------------------
+
+// 全局变量
+@import 'variables';
+
+// 混入声明
+@import 'mixins';
+
+/* 页面个性化样式 */
+// ----------------------------
+body {
+    background-color: #f9f9f9;
+    /* background-image: url(bgimg/bg.png);
+    background-repeat: repeat; */
+    color: #7f7f7f;
+    font: 14px/1.5 Arial, \5FAE\8F6F\96C5\9ED1;
+}
+
+/* Todo: 是否在base里面重置 */
+a { text-decoration:none; }
+
+/* 框架布局 */
+// ----------------------------
+.aside {
+    position: fixed;
+    top: 0;
+    left: 50px;
+    min-height: 1px;
+    width: 220px;
+    background-color: #fff;
+}
+.logo {
+    height: 100px;
+    width: 220px;
+    margin-bottom: 25px;
+    background-color: #458FCE;
+    border-bottom: 1px solid #1276CB;
+    color: #fff;
+}
+
+// 页脚
+.footer {
+    text-align:center; margin-top:40px; padding:20px; border-top:2px solid #ddd; 
+}
+
+/* 侧栏导航 */
+// ----------------------------
+.nav-list {
+    @include removeListStyle;
+
+    ul { @include removeListStyle; text-indent: 2em; }
+
+    li {
+        .active {
+            margin-left: -5px;
+            background-color: #f9f9f9;
+            border-left: 5px solid #458FCE;
+        }
+    }
+
+    a {
+        display: block;
+        padding: 10px 0 10px 20px;
+        color:#666; 
+
+        &:hover { color:#458FCE; }
+    }
+
+    .active > a { color:#458FCE; }
+}
+
+
+
+
+
+.content {
+    padding:100px 0 0 320px; 
+}
+.post {
+    min-height: 600px;
+    margin-right:50px; 
+    padding:30px; 
+    background:#fff;
+}
+.breadcrumb li {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 24px;
+    *vertical-align: top; *zoom: 1; *display: inline;
+}
+
+/* font */
+.brand {
+    padding: 15px 0 0;
+    line-height: normal;
+    text-align: center;
+    font-size: 50px;
+    font-weight:bold; 
+}
+.quote {
+    margin-top: -5px;
+    padding: 0 20px;
+    text-align: right;
+    font-size: 12px;
+}
+
+// 代码
+// --------------------------------------------------
+
+// 行内代码和块代码
+code,
+pre {
+    margin:0; 
+    padding: 0 3px 2px;
+    font-family:$monoFontFamily; 
+    font-size: $baseFontSize;
+    color: $grayDark;
+}
+
+code {
+    padding: 2px 4px;
+    color: #d14;
+    background-color: #f7f7f9;
+    border: 1px solid #e1e1e8;
+    white-space: nowrap;
+}
+
+pre {
+    font-size: $baseFontSize; 
+    line-height: $baseLineHeight;
+    word-break: break-all;
+    word-wrap: break-word;
+    white-space: pre;
+    white-space: pre-wrap;
+    background-color: #f5f5f5;
+    border: 1px solid #DDD; 
+
+    code {
+        padding: 0;
+        color: inherit;
+        white-space: pre;
+        white-space: pre-wrap;
+        background-color: transparent;
+        border: 0;
+    }
+}

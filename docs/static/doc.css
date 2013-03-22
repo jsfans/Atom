@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/* 页面个性化样式 */
+body { background-color: #f9f9f9; /* background-image: url(bgimg/bg.png);
+background-repeat: repeat; */ color: #7f7f7f; font: 14px/1.5 Arial, \5FAE\8F6F\96C5\9ED1; }
+
+/* Todo: 是否在base里面重置 */
+a { text-decoration: none; }
+
+/* 框架布局 */
+.aside { position: fixed; top: 0; left: 50px; min-height: 1px; width: 220px; background-color: #fff; }
+
+.logo { height: 100px; width: 220px; margin-bottom: 25px; background-color: #458FCE; border-bottom: 1px solid #1276CB; color: #fff; }
+
+.footer { text-align: center; margin-top: 40px; padding: 20px; border-top: 2px solid #ddd; }
+
+/* 侧栏导航 */
+.nav-list { margin: 0; padding: 0; list-style: none; }
+.nav-list ul { margin: 0; padding: 0; list-style: none; text-indent: 2em; }
+.nav-list li .active { margin-left: -5px; background-color: #f9f9f9; border-left: 5px solid #458FCE; }
+.nav-list a { display: block; padding: 10px 0 10px 20px; color: #666; }
+.nav-list a:hover { color: #458FCE; }
+.nav-list .active > a { color: #458FCE; }
+
+.content { padding: 100px 0 0 320px; }
+
+.post { min-height: 600px; margin-right: 50px; padding: 30px; background: #fff; }
+
+.breadcrumb li { display: inline-block; font-size: 12px; line-height: 24px; *vertical-align: top; *zoom: 1; *display: inline; }
+
+/* font */
+.brand { padding: 15px 0 0; line-height: normal; text-align: center; font-size: 50px; font-weight: bold; }
+
+.quote { margin-top: -5px; padding: 0 20px; text-align: right; font-size: 12px; }
+
+code, pre { margin: 0; padding: 0 3px 2px; font-family: Monaco, Menlo, Consolas, "Courier New", monospace; font-size: 12px; color: #222222; }
+
+code { padding: 2px 4px; color: #d14; background-color: #f7f7f9; border: 1px solid #e1e1e8; white-space: nowrap; }
+
+pre { font-size: 12px; line-height: 1.5; word-break: break-all; word-wrap: break-word; white-space: pre; white-space: pre-wrap; background-color: #f5f5f5; border: 1px solid #DDD; }
+pre code { padding: 0; color: inherit; white-space: pre; white-space: pre-wrap; background-color: transparent; border: 0; }

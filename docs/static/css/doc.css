@@ -1,0 +1,78 @@
+/*
+Syntax error: File to import not found or unreadable: variables.
+              Load paths:
+                E:/webroot/jsfans/Atom/theme/sass
+                C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/blueprint/stylesheets
+                C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets
+                Compass::SpriteImporter
+        on line 8 of E:/webroot/jsfans/Atom/theme/sass/doc.scss
+
+Backtrace:
+E:/webroot/jsfans/Atom/theme/sass/doc.scss:8
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.2/lib/sass/tree/import_node.rb:64:in `rescue in import'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.2/lib/sass/tree/import_node.rb:42:in `import'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.2/lib/sass/tree/import_node.rb:25:in `imported_file'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.2/lib/sass/tree/visitors/perform.rb:227:in `rescue in visit_import'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.2/lib/sass/tree/visitors/perform.rb:232:in `visit_import'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.2/lib/sass/tree/visitors/base.rb:37:in `visit'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.2/lib/sass/tree/visitors/perform.rb:98:in `visit'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.2/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.2/lib/sass/tree/visitors/base.rb:53:in `map'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.2/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.2/lib/sass/tree/visitors/perform.rb:107:in `block in visit_children'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.2/lib/sass/tree/visitors/perform.rb:119:in `with_environment'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.2/lib/sass/tree/visitors/perform.rb:106:in `visit_children'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.2/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.2/lib/sass/tree/visitors/perform.rb:126:in `visit_root'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.2/lib/sass/tree/visitors/base.rb:37:in `visit'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.2/lib/sass/tree/visitors/perform.rb:98:in `visit'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.2/lib/sass/tree/visitors/perform.rb:7:in `visit'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.2/lib/sass/tree/root_node.rb:20:in `render'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.2/lib/sass/engine.rb:315:in `_render'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.2/lib/sass/engine.rb:262:in `render'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `block (2 levels) in compile'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:139:in `block in compile'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/logger.rb:45:in `red'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:138:in `compile'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:103:in `block (2 levels) in run'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `each'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `block in run'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/update_project.rb:45:in `perform'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/guard-compass-0.0.6/lib/guard/compass.rb:47:in `run_on_change'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/guard-1.6.2/lib/guard/runner.rb:99:in `block in run_supervised_task'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/guard-1.6.2/lib/guard/runner.rb:97:in `catch'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/guard-1.6.2/lib/guard/runner.rb:97:in `run_supervised_task'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/guard-1.6.2/lib/guard/runner.rb:146:in `block in run_first_task_found'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/guard-1.6.2/lib/guard/runner.rb:144:in `each'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/guard-1.6.2/lib/guard/runner.rb:144:in `run_first_task_found'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/guard-1.6.2/lib/guard/runner.rb:79:in `block in run_on_changes'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/guard-1.6.2/lib/guard/runner.rb:175:in `block (3 levels) in scoped_guards'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/guard-1.6.2/lib/guard/runner.rb:174:in `each'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/guard-1.6.2/lib/guard/runner.rb:174:in `block (2 levels) in scoped_guards'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/guard-1.6.2/lib/guard/runner.rb:173:in `catch'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/guard-1.6.2/lib/guard/runner.rb:173:in `block in scoped_guards'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/guard-1.6.2/lib/guard/runner.rb:172:in `each'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/guard-1.6.2/lib/guard/runner.rb:172:in `scoped_guards'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/guard-1.6.2/lib/guard/runner.rb:72:in `run_on_changes'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/guard-1.6.2/lib/guard.rb:139:in `block (2 levels) in setup_listener'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/guard-1.6.2/lib/guard.rb:363:in `block in within_preserved_state'
+<internal:prelude>:10:in `synchronize'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/guard-1.6.2/lib/guard.rb:360:in `within_preserved_state'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/guard-1.6.2/lib/guard.rb:138:in `block in setup_listener'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/listen-0.7.3/lib/listen/listener.rb:212:in `call'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/listen-0.7.3/lib/listen/listener.rb:212:in `on_change'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/listen-0.7.3/lib/listen/listener.rb:221:in `block in initialize_adapter'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/listen-0.7.3/lib/listen/adapters/polling.rb:56:in `call'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/listen-0.7.3/lib/listen/adapters/polling.rb:56:in `poll'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/listen-0.7.3/lib/listen/adapters/polling.rb:32:in `block in start'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: File to import not found or unreadable: variables.\A               Load paths:\A                 E:/webroot/jsfans/Atom/theme/sass\A                 C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/blueprint/stylesheets\A                 C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets\A                 Compass::SpriteImporter\A         on line 8 of E:/webroot/jsfans/Atom/theme/sass/doc.scss"; }
